@@ -31,6 +31,18 @@
     justify-content: space-between;
     flex-wrap: wrap; /* Ensures footer elements don't overflow on small screens */
   }
+
+  footer {
+    /* position: fixed; Or absolute, I might change this later */
+    bottom: 0;
+    width: 100%; /* Spans the entire viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: white;
+  }
+  
   
   /* Logo Alignment */
   .logo {
