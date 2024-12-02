@@ -1,0 +1,35 @@
+<%- include('partials/header', { title: 'View Handymen' }) %> <%-
+include('partials/nav') %>
+
+<!-- <section class="handymen"> -->
+<section class="values">
+  <h2>Available Handymen</h2>
+  <!-- <div class="card-grid"> -->
+  <div class="values-grid">
+    <% handymen.forEach(handyman => { %>
+    <!-- <div class="handyman"> -->
+    <div class="value-item">
+      <img
+        src="<%= handyman.image %>"
+        width="50"
+        alt="<%= handyman.name %>"
+        class="handyman-image"
+      />
+      <div class="handyman-info">
+        <h3><%= handyman.name %></h3>
+        <p>Skill: <%= handyman.skill %></p>
+        <p>Location: <%= handyman.location %></p>
+        <p>Daily Pay: #<%= handyman.dailyPay %> Per Day</p>
+        <p>Contact: <%= handyman.phoneNumber %></p>
+        <a href="/handymen/<%= handyman._id %>" class="cta-button"
+          >Get a Handyman Now</a
+        >
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</section>
+
+<a href="/" class="fix_user">Back to Home</a>
+
+<%- include('partials/footer') %>

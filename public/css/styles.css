@@ -1,0 +1,687 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body { 
+    height: 100%; /* Ensures the body takes up the full height of the viewport */
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #333;
+    background-color: #f0f2f5; /* Softer background color */
+    display: flex;
+    flex-direction: column; /* Makes the body a flex container */
+    min-height: 100vh; /* Ensure body takes at least the full viewport height */
+  }
+  
+  /* Header and Footer */
+  header, footer {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures footer elements don't overflow on small screens */
+  }
+  
+  /* Logo Alignment */
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    flex-grow: 1; /* Ensures the content area takes up available space */
+  }
+  
+  /* Links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navbar Styling */
+  nav {
+    background-color: #007bff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure menu wraps on small screens */
+    justify-content: center; /* Center the navigation items */
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  /* Button Styling */
+  .btn, .cta-button, .action-button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover, .cta-button:hover, .action-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Delete Button Specific Styling */
+  .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Edit Button Specific Styling */
+  .edit-button {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .edit-button:hover {
+    background-color: #e0a800;
+  }
+  
+  /* View Button Specific Styling */
+  .view-button {
+    background-color: #17a2b8;
+  }
+  
+  .view-button:hover {
+    background-color: #138496;
+  }
+  
+  /* Form Styling */
+  .auth-container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .auth-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .auth-form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .toggle-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .toggle-link a {
+    color: #007bff;
+    font-weight: 600;
+  }
+  
+  .toggle-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Admin Dashboard Styling */
+  .admin-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  
+  .admin-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .admin-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .admin-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .admin-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .admin-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .admin-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .item-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item-name, .item-email, .item-price, .item-order, .item-details, .item-status {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .item-name {
+    font-weight: 600;
+  }
+  
+  .item-email {
+    font-style: italic;
+  }
+  
+  .item-order, .item-details, .item-status {
+    margin-top: 4px;
+  }
+  
+  .item-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  /* Delete Form Styling */
+  .delete-form {
+    display: inline;
+  }
+  
+  /* Back to Home Link */
+  .back-home-link {
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 16px;
+    color: #007bff;
+  }
+  
+  .back-home-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('/images/webpHeroPic.webp') no-repeat center center/cover;
+    padding: 150px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  /* Centering and Typography */
+  .fix_user, .profile, .centreLoginRegister {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Grid Layout for Handymen and Admin Sections */
+  /* .handymen .card-grid, .admin-sections { */
+  .card-grid, .admin-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* .handyman-card, .admin-card { */
+    .admin-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .handymen h2 {
+    text-align: center;
+  }
+  
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+  }
+  
+  
+  /* Social Links Styling */
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure social links fit well on small screens */
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #218838;
+  }
+  
+  .back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  
+
+  /* About Content Section */
+.about-content {
+  padding: 2rem 1rem;
+  background: #ffffff;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.mission, .vision {
+  flex: 1 1 calc(50% - 2rem);
+  background: #eaf2f8;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.mission h2, .vision h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2980b9;
+}
+
+.mission p, .vision p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Core Values Section */
+.values {
+  background: #f9f9f9;
+  padding: 2rem 1rem;
+}
+
+.values h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #27ae60;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.value-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.value-item img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Why Us Section */
+.why-us {
+  padding: 2rem 1rem;
+  background: #e8f5e9;
+}
+
+.why-us h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #16a085;
+}
+
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.reason {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.reason h3 {
+  font-size: 1.5rem;
+  color: #2980b9;
+  margin-bottom: 0.5rem;
+}
+
+.reason p {
+  color: #555;
+}
+
+/* Process Section */
+.process {
+  padding: 2rem 1rem;
+  background: #f4f4f4;
+}
+
+.process h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #e67e22;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.step {
+  text-align: center;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.step span {
+  display: block;
+  font-size: 2rem;
+  color: #c0392b;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  color: #555;
+}
+
+/*Signu Up Page*/
+.signup {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.signup h2 {
+  text-align: center;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup input,
+.signup button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.signup .error-messages ul {
+  color: red;
+  list-style: none;
+  padding: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission, .vision {
+    flex: 1 1 100%;
+  }
+}
+  
+  
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%; /* Increase width to fill more space on smaller screens */
+    }
+  
+    nav ul {
+      justify-content: center;
+    }
+  
+    .hero {
+      padding: 100px 0; /* Reduce padding on smaller screens */
+    }
+  
+    .sellers .card-grid, .admin-sections {
+      grid-template-columns: 1fr; /* Display cards in a single column on smaller screens */
+    }
+  
+    footer {
+      flex-direction: column; /* Stack footer items vertically */
+      text-align: center;
+    }
+  
+    .admin-card {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn, .cta-button, .action-button {
+      padding: 10px 20px; /* Adjust button size on very small screens */
+      font-size: 14px;
+    }
+  
+    nav ul {
+      gap: 10px; /* Reduce gap between menu items */
+    }
+  
+    .hero {
+      padding: 80px 0; /* Further reduce padding */
+    }
+  
+    .admin-list-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item-actions {
+      margin-top: 10px;
+    }
+  }
+  

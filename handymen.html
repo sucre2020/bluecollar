@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YY8F04M3YJ"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handymen</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="templeimages/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="templeimages/favicon_io/favIcon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="templeimages/favicon_io/favIcon.png">
+    <link rel="manifest" href="templeimages/favicon_io/site.webmanifest">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index"><img src="templeimages/IMG-20210116-WA0006 (1).jpg" width="45px" alt="Sangisang logo"></a>
+                    <p><span class="blue">SANGISANG</span><span class="black"> SERVICES</span></p>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index">Home</a></li>
+                        <li><a href="handymen">Handymen</a></li>
+                        <!--<div class="dropdown">-->
+                        <li><a href="https://forms.gle/WJ7TsuePwcshbh3r9" target="_blank">Signup as Handyman</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                        <a href="david_details"></a>
+                    </ul>
+                </nav>
+                <img src="templeimages/menu-icon.png" alt="menu-icon" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <!--div class="centered">
+        <input type="text" placeholder="Search.."></div-->
+            <span id="visitCountDisplay"></span>
+
+        </div>
+        <div class="small-container">
+            <div class="row row-2">
+                <h2 class="findhandy">Find Handymen</h2>
+            </div>
+            <div class="search-container">
+                <input type="text" id="locationSearch" placeholder="Search by location...">
+                <button onclick="searchByLocation()">Search by Location</button>
+                <input type="text" id="titleSearch" placeholder="Search by title...">
+                <button onclick="searchByTitle()">Search by Title</button>
+            </div>
+            </select>
+            <div class="categories">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="row">
+
+
+            <!-----------------------------FEATURED SERVICES-------------------------------------------------------------->
+        </div>
+        <h2 class="title">Hire a Handyman</h2>
+        <div class="row">
+            <div class="col-44">
+                <img src="templeimages/ac repairer.jpg">
+                <h4>Goodluck</h4>
+                <h4>Electrical Installations</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08092995975">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <a href="productdetails.html"><img src="templeimages/david (1).webp" class="sized"></a>
+                <h4>David</h4>
+                <h4>Electrician</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08036154218">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/masonMan.jpg" class="sized">
+                <h4>Boco</h4>
+                <h4>Mason Man</h4>
+                <h4>Calabar | Cross River State</h4>
+                <h4><a href="tel:08143380744">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/anietie (1).webp" class="sized">
+                <h4>Anietie</h4>
+                <h4>Mason Man</h4>
+                <h4>Calabar | Cross River State</h4>
+                <h4><a href="tel:08064657474">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/uncleprince (1).webp" class="sized">
+                <h4>Prince</h4>
+                <h4>Painter</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:07035535594">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/tailor.jpg" class="sized">
+                <h4>Gladys</h4>
+                <h4>Tailor</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08096950851">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/carpenter1.jpg" class="sized">
+                <h4>Petson Construction</h4>
+                <h4>Carpentery | Building Maintenance | Construction</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:09013958917">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/ovunwo (1).webp" class="sized">
+                <h4>Ovunwo</h4>
+                <h4>Plumber</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08075825532">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/mechanic.jpg" class="sized">
+                <h4>Emmanuel</h4>
+                <h4>Mechanic</h4>
+                <h4>Eket | Akwa Ibom</h4>
+                <h4><a href="tel:(234) 70-1444-8815">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/babira (1).webp" class="sized">
+                <h4>Richard</h4>
+                <h4>Interior Design & Wallpaper</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08101008030">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/samylaff (1).jpg" class="sized">
+                <h4>SammyLaff</h4>
+                <h4>DJ Services | Event MC | Tv Production</h4>
+                <h4>Port Harcourt Rivers State</h4>
+                <h4><a href="tel:08035232656"></a>Call Now</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/gabby_tailor.webp" class="sized">
+                <h4>Gabriel</h4>
+                <h4>Tailor</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:07068666900">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/batho_screeding.jpg" class="sized">
+                <h4>Barthlomew</h4>
+                <h4>All things Screeding & Painting</h4>
+                <h4>Awka | Anambra State</h4>
+                <h4><a href="tel:08032513685">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Nephi1.jpg   " class="sized">
+                <h4>Nephi</h4>
+                <h4>DSTV & Satellite Installations</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08101565689">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/tailord (1).jpg" class="sized">
+                <h4>Tailord Afrik</h4>
+                <h4>Fashion Designer</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:09063712229">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/akwara.jpg" class="sized">
+                <h4>Akwara</h4>
+                <h4>Photographer | Videographer | Graphics Designer | Cinematographer</h4>
+                <h4>Benin | Edo State</h4>
+                <h4><a href="tel:09035670903">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/plumber.jpg" class="sized">
+                <h4>Barine</h4>
+                <h4>Plumber</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08145894668">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/industrial cleaner.jpg" class="sized">
+                <h4>Ekanem</h4>
+                <h4>Event Management | Industrial Cleaning</h4>
+                <h4>Calabar | Cross River State</h4>
+                <h4><a href="tel:08174538408">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/masseur.jpg" class="sized">
+                <h4>Thomas</h4>
+                <h4>Masseur | Gardener</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:07065203044">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/Christo.jpg" class="sized">
+                <h4>Christo</h4>
+                <h4>DSTV | GOTV | Satellite Installation</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08037184941">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/essien_shoes.webp" class="sized">
+                <h4>Essien</h4>
+                <h4>Shoe Cobbler</h4>
+                <h4>Abeokuta | Ogun State</h4>
+                <h4><a href="tel:08143559782">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/Jacob.jpg" class="sized">
+                <h4>Jacob</h4>
+                <h4>Laptop/PC Repairs</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08177773856">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/shoes_gabe1.webp" class="sized">
+                <h4>Gabriel</h4>
+                <h4>Shoe Cobbler | Leather Works| Leather Bags</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08079067398">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Uche.jpg" class="sized">
+                <h4>Uche</h4>
+                <h4>Laptop Repairs | Laptop Sales</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08139759757">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/soso.jpg" class="sized">
+                <h4>Pure Glamour</h4>
+                <h4>Beauty | Cosmetic & Personal Care</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:07063196456">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/ndasia.webp" class="sized">
+                <h4>Ndasia</h4>
+                <h4>Carpenter</h4>
+                <h4>Calabar | Cross River State</h4>
+                <h4><a href="tel:09015454004">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/handyman (28).webp" class="sized">
+                <h4>Ugochukwu</h4>
+                <h4>Satellite Installation | Electricals & Wiring</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:09011072890">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/painter.webp" class="sized">
+                <h4>Terence</h4>
+                <h4>Painter</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08037593811">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/pee.webp" class="sized">
+                <h4>Pee Stiches</h4>
+                <h4>Fashion Designer</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="08136899781">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/slyvia.webp" class="sized">
+                <h4>Sylvia</h4>
+                <h4>Computer Operator</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:09036560129">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+
+            <div class="col-44">
+                <img src="templeimages/pius.webp" class="sized">
+                <h4>Pius</h4>
+                <h4>Led Screen Engineer</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08118420895">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/aluminium1.webp" class="sized">
+                <h4>Henry</h4>
+                <h4>Aluminium Windows | Doors</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08030871955">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/peggy Oyonumoh1.jpg" class="sized">
+                <h4>Peggy</h4>
+                <h4>Catering Services</h4>
+                <h4>Uyo | Akwa Ibom State </h4>
+                <h4><a href="tel:09123942124">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/mgbebe sim2.png" class="sized">
+                <h4>Simeon</h4>
+                <h4>Frameles Shower Cubicle</h4>
+                <h4>Dawhenya |Greater Accra | Ghana</h4>
+                <h4><a href="tel:+233571521761">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Thomas L.jpg" class="sized">
+                <h4>Thomas Longmen</h4>
+                <h4>Computer Hardware Maintenance | Software Engineer</h4>
+                <h4>Jos | Plateau State</h4>
+                <h4><a href="tel:07064771544">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Clement Oden2.jpg" class="sized">
+                <h4>Clement Abam </h4>
+                <h4>Solar Inverter | CCTV Installation & Rapairs</h4>
+                <h4>Calabar | Cross River State</h4>
+                <h4><a href="tel:08054543707">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Mfon Chikezie_Food3.jpg" class="sized">
+                <h4>Mfon Chikezie</h4>
+                <h4>Cook | Chef</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08037106666">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Fatuga Hameed.jpeg" class="sized">
+                <h4>Fatuga Hameed</h4>
+                <h4>Industrial Cleaning | Fumigation</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:07039191931">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/wisdom simeon2.webp" class="sized">
+                <h4>Wisdom</h4>
+                <h4>Tiler</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08136596791">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Benzine2.jpg" class="sized">
+                <h4>Benzine</h4>
+                <h4>Electrical work | Solar insulation</h4>
+                <h4>Jos | Plateau State</h4>
+                <h4><a href="tel:07035638522">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Mfon Chikezie_Hair1.jpg" class="sized">
+                <h4>Mfon Chikezie</h4>
+                <h4>Hair Stylist | Data Analyst</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:08037106666">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Bethel forcados.png" class="sized">
+                <h4>Bethel Forcados</h4>
+                <h4>Plumbing</h4>
+                <h4>Abuja | FCT</h4>
+                <h4><a href="tel:07069500685">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Abraham_Akwaowo.jpg" class="sized">
+                <h4>Abraham</h4>
+                <h4>Auto (car) Tracker Installation | Electrical Installation</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:+2348139612959">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Eunice Joseph.webp" class="sized">
+                <h4>Eunice</h4>
+                <h4>Wholesale Shoes | Bags</h4>
+                <h4>Jos | Plateau State</h4>
+                <h4><a href="tel:2349027770322">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Atang Azi_sized.webp" class="sized">
+                <h4>Atang Azi</h4>
+                <h4>Carpenter</h4>
+                <h4>Jos | Plateau State</h4>
+                <h4><a href="tel:+2349032317300">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Job Ogala_sized.webp" class="sized">
+                <h4>Job</h4>
+                <h4>Graphics Designer </h4>
+                <h4>Jos | Plateau Sate</h4>
+                <h4><a href="tel:+23407068743395">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/IMG_20230320_183303_907 - Samuel Arikpo-fotor-202308239580.jpg" class="sized">
+                <h4>Samuel Arikpo</h4>
+                <h4>Renewable energy | CCTV | Street Light Installation</h4>
+                <h4>Ugep | Cross River State</h4>
+                <h4><a href="tel:+23408104764393">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Ihechukwu Nwaokonko.png" class="sized">
+                <h4>Ihechukwu Nwaokonko</h4>
+                <h4>Virtual Assistant | Industrial Cleaner</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:+23409156348835">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/SOMAC FOODS.jpg" class="sized">
+                <h4>J-SOMAC FOODS</h4>
+                <h4>CATERING SERVICES | VIRTUAL ASSISTANT | GRAPHICS DESIGNER</h4>
+                <h4>Port Harcourt | Rivers State</h4>
+                <h4><a href="tel:+2349020517437">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/clement oche.jpg" class="sized">
+                <h4>Christopher Simon</h4>
+                <h4>Painting | Screeding </h4>
+                <h4>Jos | Plateau State</h4>
+                <h4><a href="tel:+23408167700104">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/christopher moses.jpg" class="sized">
+                <h4>Moses</h4>
+                <h4>Painter</h4>
+                <h4>Jos | Plateau State</h4>
+                <h4><a href="tel:+2348169493194">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-44">
+                <img src="templeimages/Isaac Yohanna.jpg" class="sized">
+                <h4>Yohanna</h4>
+                <h4>Painting | Wallpaper | Screeding</h4>
+                <h4>Jos | Plateau State</h4>
+                <h4><a href="tel:+2348139076602">Call Now</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!------------------------------------footer------------------------------------------------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="templeimages/appstore.webp" alt="">
+                        <img src="templeimages/applestore.webp" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <P>
+                        Disclaimer: All the information on this website is
+                        published in good faith and for general information purposes. 
+                        Handymen App / Sangisang Services
+                        does not make any warranties about the completeness,
+                        reliability and accuracy of this information. <br>Read the disclaimer <a href="disclaimer">here.</a> 
+                    </P>
+                    <h2 class="styled"></h2>
+                    <p>Sangisang Services. Let's get you there!
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a href="index">
+                            <li>Home</li>
+                        </a>
+                        <a href="handymen">
+                            Handymen
+                        </a>
+                        <a href="contact">
+                            <li>Contact Us</li>
+                        </a>
+                        <li><a href="https://forms.gle/WJ7TsuePwcshbh3r9" target="_blank">Signup as Handyman</a></li>
+                        <a href="privacy">Privacy Policy</a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/sangisang001?mibextid=ZbWKwL" target="_blank">
+                            <li><img src="templeimages/facebook_circle_color-128.webp" width="30"></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> &copy;2023 - Sangisang Services<br>Last Modification: <span id="efita"></span>
+            </p>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+    <script src="lastmod/script.js"></script>
+</body>
+
+</html>

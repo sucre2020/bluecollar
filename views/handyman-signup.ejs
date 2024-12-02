@@ -1,0 +1,43 @@
+<%- include('partials/header', { title: 'Handyman Signup' }) %> <%-
+include('partials/nav') %>
+
+<section class="signup">
+  <h2>Handyman Signup</h2>
+
+  <% if (errors.length > 0) { %>
+  <div class="error-messages">
+    <ul>
+      <% errors.forEach(error => { %>
+      <li><%= error.msg %></li>
+      <% }) %>
+    </ul>
+  </div>
+  <% } %>
+  <form action="/handyman/signup" method="POST" enctype="multipart/form-data">
+    <!-- <form action="/handyman/signup" method="POST"> -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required />
+
+    <label for="dailyPay">Daily Pay:</label>
+    <input type="number" id="dailyPay" name="dailyPay" required />
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" required />
+
+    <label for="emailAddress">Email Address:</label>
+    <input type="email" id="emailAddress" name="emailAddress" required />
+
+    <label for="skill">Skill/Handwork:</label>
+    <input type="text" id="skill" name="skill" required />
+
+    <label for="image">Upload Image:</label>
+    <input type="file" id="image" name="image" accept="image/*" />
+
+    <button type="submit">Sign Up</button>
+  </form>
+</section>
+
+<%- include('partials/footer') %>

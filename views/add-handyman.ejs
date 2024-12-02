@@ -1,0 +1,44 @@
+<%- include('partials/header', { title: 'Sangisang Ordering App' }) %> <%-
+include('partials/nav') %>
+<main>
+  <form action="/handymen/add" method="POST">
+    <label for="dailyPayAmount">Daily Charge Amount:</label>
+    <input type="text" id="dailyPayAmount" name="dailyPayAmount" required />
+
+    <label for="skill">Skill/Handwork</label>
+    <input
+      type="text"
+      id="skill"
+      name="skill"
+      placeholder="Enter Skill/Profession/Handwork"
+      required
+    />
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" />
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" />
+
+    <button type="submit">Add Skill</button>
+  </form>
+
+  <% if (errors.length > 0) { %>
+  <ul>
+    <% errors.forEach(error => { %>
+    <li><%= error.msg %></li>
+    <% }) %>
+  </ul>
+  <% } %>
+</main>
+
+<% if (user) { %>
+<p class="fix_user">
+  Hello, <%= user.name %>!
+  <a href="/auth/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+</p>
+<% } else { %>
+<p class="centreLoginRegister">
+  <a href="/auth/login">Login</a> or <a href="/auth/register">Register</a>
+</p>
+<% } %> <%- include('partials/footer') %>

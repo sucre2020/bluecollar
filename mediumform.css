@@ -1,0 +1,16 @@
+ /* FORM */
+
+  form fieldset {
+    margin: 15px;
+    text-align: start;
+  }
+
+  form label.top input {
+    font-size: 1rem;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+ 
