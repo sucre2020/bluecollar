@@ -504,7 +504,7 @@
   gap: 1.5rem;
 }
 
-.value-item {
+.value-item, .handyman-item {
   text-align: center;
   padding: 1.5rem;
   background: #ffffff;
@@ -516,6 +516,14 @@
   width: 60px;
   margin-bottom: 1rem;
 }
+
+.handyman-image {
+  display: block; /* Removes extra spaces below the image */
+  max-width: 100%; /* Ensures the image scales down within its container */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 0 auto; /* Center the image if needed */
+ } 
+
 
 .value-item h3 {
   font-size: 1.5rem;

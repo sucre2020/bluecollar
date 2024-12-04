@@ -8,10 +8,14 @@ include('partials/nav') %>
   <div class="values-grid">
     <% handymen.forEach(handyman => { %>
     <!-- <div class="handyman"> -->
-    <div class="value-item">
+    <div class="handyman-item">
       <!-- Use Cloudinary transformation for uniform image size -->
       <img
-        src="<%= handyman.image.replace('/upload/', '/upload/w_500,h_500,c_fill,g_auto/') %>"
+        src="<%= handyman.image.replace('/upload/', '/upload/w_800,h_800,c_fill,g_auto/') %>"
+        srcset="
+    <%= handyman.image.replace('/upload/', '/upload/w_1000,h_1000,c_fill,g_auto/') %> 1000w, 
+    <%= handyman.image.replace('/upload/', '/upload/w_1200,h_1200,c_fill,g_auto/') %> 1200w"
+        sizes="(max-width: 768px) 800px, (max-width: 1200px) 1000px, 1200px"
         alt="<%= handyman.name %>"
         class="handyman-image"
       />
