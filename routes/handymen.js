@@ -120,6 +120,9 @@ router.post(
     }
 
     try {
+      // Get the Cloudinary URL from the uploaded file
+      const imageUrl = req.file ? req.file.path : "";
+
       const newHandyman = new Handyman({
         name,
         location,
@@ -127,7 +130,7 @@ router.post(
         phoneNumber,
         emailAddress,
         skill,
-        image,
+        image: imageUrl, //Save Cloudinary image url
       });
 
       await newHandyman.save();
