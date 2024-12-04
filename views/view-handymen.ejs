@@ -9,9 +9,9 @@ include('partials/nav') %>
     <% handymen.forEach(handyman => { %>
     <!-- <div class="handyman"> -->
     <div class="value-item">
+      <!-- Use Cloudinary transformation for uniform image size -->
       <img
-        src="<%= handyman.image %>"
-        width="50"
+        src="<%= handyman.image.replace('/upload/', '/upload/w_500,h_500,c_fill,g_auto/') %>"
         alt="<%= handyman.name %>"
         class="handyman-image"
       />
