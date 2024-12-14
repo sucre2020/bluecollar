@@ -55,7 +55,8 @@ router.post("/handymen/add", ensureAuth, async (req, res) => {
 });
 
 // Route: View all handymen (GET)
-router.get("/handymen", ensureAuth, async (req, res) => {
+router.get("/handymen", async (req, res) => {
+  // removed ensureAuth to enable users can view handymen regardless if logged in or not,
   try {
     // const handymen = await Handyman.find({ userId: req.user.id });// commented out this line so all handymen are displayed when called regardless of who created them
     const handymen = await Handyman.find();
