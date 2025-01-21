@@ -19,16 +19,27 @@ router.get("/handymen/add", ensureAuth, (req, res) => {
 
 // Route: Add handyman (POST)
 router.post("/handymen/add", ensureAuth, async (req, res) => {
-  const { name, location, dailyPay, phoneNumber, emailAddress, image, skill } =
-    req.body;
+  const {
+    name,
+    state,
+    lga,
+    area,
+    dailyPay,
+    phoneNumber,
+    emailAddress,
+    image,
+    skill,
+  } = req.body;
   let errors = [];
 
-  if (!name) {
-    errors.push({ msg: "Please enter name" });
-  }
-  if (!skill) {
-    errors.push({ msg: "Please enter skill/handwork" });
-  }
+  if (!name) errors.push({ msg: "Name is required" });
+  if (!state) errors.push({ msg: "State is required" });
+  if (!lga) errors.push({ msg: "LGA is required" });
+  if (!area) errors.push({ msg: "Area is required" });
+  if (!dailyPay) errors.push({ msg: "Daily pay is required" });
+  if (!phoneNumber) errors.push({ msg: "Phone number is required" });
+  if (!emailAddress) errors.push({ msg: "Email address is required" });
+  if (!skill) errors.push({ msg: "Skill is required" });
 
   if (errors.length > 0) {
     res.render("add-handyman", { errors, user: req.user });
@@ -37,7 +48,9 @@ router.post("/handymen/add", ensureAuth, async (req, res) => {
       const newHandyman = new Handyman({
         userId: req.user.id,
         name,
-        location,
+        state,
+        lga,
+        area,
         dailyPay,
         phoneNumber,
         emailAddress,
@@ -103,14 +116,24 @@ router.post(
   ensureAuth,
   upload.single("image"),
   async (req, res) => {
-    const { name, location, dailyPay, phoneNumber, emailAddress, skill } =
-      req.body;
+    const {
+      name,
+      state,
+      lga,
+      area,
+      dailyPay,
+      phoneNumber,
+      emailAddress,
+      skill,
+    } = req.body;
     const image = req.file ? `/uploads/${req.file.filename}` : ""; // Save file path
     let errors = [];
 
     // Validate fields
     if (!name) errors.push({ msg: "Name is required" });
-    if (!location) errors.push({ msg: "Location is required" });
+    if (!state) errors.push({ msg: "State is required" });
+    if (!lga) errors.push({ msg: "LGA is required" });
+    if (!area) errors.push({ msg: "Area is required" });
     if (!dailyPay) errors.push({ msg: "Daily pay is required" });
     if (!phoneNumber) errors.push({ msg: "Phone number is required" });
     if (!emailAddress) errors.push({ msg: "Email address is required" });
@@ -126,7 +149,9 @@ router.post(
 
       const newHandyman = new Handyman({
         name,
-        location,
+        state,
+        lga,
+        area,
         dailyPay,
         phoneNumber,
         emailAddress,

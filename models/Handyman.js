@@ -14,7 +14,15 @@ const HandymanSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  location: {
+  state: {
+    type: String,
+    required: true,
+  },
+  lga: {
+    type: String,
+    required: true,
+  },
+  area: {
     type: String,
     required: true,
   },

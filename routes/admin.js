@@ -97,9 +97,10 @@ router.post(
     const {
       name,
       dailyPay,
-      location,
+      state,
+      lga,
+      area,
       rating,
-      deliveryTime,
       emailAddress,
       phoneNumber,
     } = req.body;
@@ -108,9 +109,10 @@ router.post(
       const newHandyman = new Handyman({
         name,
         dailyPay,
-        location,
+        state,
+        lga,
+        area,
         rating,
-        deliveryTime,
         emailAddress,
         phoneNumber,
       });
@@ -130,13 +132,16 @@ router.post(
   ensureAuthenticated,
   ensureAdmin,
   async (req, res) => {
-    const { name, location, dailyPay, phoneNumber, emailAddress } = req.body;
+    const { name, state, lga, area, dailyPay, phoneNumber, emailAddress } =
+      req.body;
     try {
       const handyman = await Handyman.findById(req.params.id);
       if (!handyman) return res.status(404).send("Handyman not found");
 
       handyman.name = name;
-      handyman.location = location;
+      handyman.state = state;
+      handyman.lga = lga;
+      handyman.area = area;
       handyman.dailyPay = dailyPay;
       handyman.phoneNumber = phoneNumber;
       handyman.emailAddress = emailAddress;

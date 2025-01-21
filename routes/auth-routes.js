@@ -84,12 +84,15 @@ router.get("/register-handyman", ensureAuth, (req, res) => {
 });
 
 router.post("/register-handyman", ensureAuth, async (req, res) => {
-  const { name, location, dailyPay, phoneNumber, emailAddress } = req.body;
+  const { name, state, lga, area, dailyPay, phoneNumber, emailAddress } =
+    req.body;
 
   try {
     const newHandyman = new Handyman({
       name,
-      location,
+      state,
+      lga,
+      area,
       dailyPay,
       phoneNumber,
       emailAddress,
